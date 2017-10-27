@@ -4,9 +4,167 @@
     <meta charset="utf-8">
     <title>Студия веб-дизайна "42"</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Привет</h1>
+    <header class="page-header">
+      <h1>Студия веб-дизайна</h1>
+      <p class="page-header__logo">
+        <img src="http://via.placeholder.com/200x50" alt="Студия веб-дизайна" width="200" height="50">
+      </p>
+      <nav class="page-header__navigation main-nav">
+        <button class="main-nav__toggle">
+          Меню
+        </button>
+        <h2 class="visually-hidden">Главное меню</h2>
+        <ul class="main-nav__list site-menu">
+          <li class="site-menu__item"><a href="#services" class="site-menu__link">Наш подход</a></li>
+          <li class="site-menu__item"><a href="#portfolio" class="site-menu__link">Портфолио</a></li>
+          <li class="site-menu__item"><a href="#about" class="site-menu__link">Схема работы</a></li>
+          <li class="site-menu__item"><a href="#contact" class="site-menu__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <section class="page-header__intro intro">
+        <h2 class="intro__title">Крутые веб-сайты любого масштаба</h2>
+        <p class="intro__description">Без регистрации и смс, но не бесплатно</p>
+        <a href="#services" class="button intro__button">Подробнее</a>
+      </section>
+    </header>
+    <main class="page-main">
+      <section class="services" id="services">
+        <h2 class="services__title">Наш подход</h2>
+        <p class="services__subtitle">Разрабатывая сайт, мы всегда помним, что:</p>
+        <ul class="services__list">
+          <li class="services__item">
+            <h3>Заказчик - не программист</h3>
+            <p class="services__text">Мы разговариваем с заказчиком на одном языке и как никто умеем слышать и понимать. Мы никогда не потребуем подробного технического задания и делаем только современный продукт.</p>
+          </li>
+          <li class="services__item">
+            <h3>Нужно соблюдать сроки</h3>
+            <p class="services__text">Сайт будет готов не в следующем веке, а в строго оговоренный срок. При этом наша работа не будет стоить как крыло самолета.</p>
+          </li>
+          <li class="services__item">
+            <h3>Сайт должен работать</h3>
+            <p class="services__text">Сайт должен делать то для чего его создавали, например: приносить прибыль, развлекать, информировать, продавать, петь, управлять, властвовать, требовать, неуместно шутить.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">Портфолио</h2>
+        <p class="portfolio__subtitle">Несколько наших работ</p>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <h3 class="portfolio__name">Сайт компании ИнфоКуб</h3>
+            <a class="portfolio__link" href="http://infokube.ru">infokube.ru</a>
+            <p class="portfolio__picture">
+              <a href="http://infokube.ru"><img src="img/portfolio-1.jpg" alt="Сайт компании ИнфоКуб" width="400" height="249"></a>
+            </p>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__name">Сайт компании "Страна Пекарния"</h3>
+            <a class="portfolio__link" href="http://stranapekarnia.ru/">stranapekarnia.ru</a>
+            <p class="portfolio__picture">
+              <a href="http://stranapekarnia.ru/"><img src="img/portfolio-2.jpg" alt="Сайт компании Страна Пекарния" width="871" height="469"></a>
+            </p>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__name">Сайт агентства недвижимости</h3>
+            <a class="portfolio__link" href="http://ex-perm.ru/">ex-perm.ru</a>
+            <p class="portfolio__picture">
+              <a href="http://ex-perm.ru/"><img src="img/portfolio-3.png" alt="Сайт агентства недвижимости" width="400" height="289"></a>
+            </p>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__name">Интернет-магазин Ниже Нуля</h3>
+            <a class="portfolio__link" href="http://bz-shop.ru/">bz-shop.ru</a>
+            <p class="portfolio__picture">
+              <a href="http://bz-shop.ru/"><img src="img/portfolio-4.jpg" alt="Интернет-магазин Ниже Нуля" width="400" height="289"></a>
+            </p>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__name">Сайт Типичная Пермь</h3>
+            <a class="portfolio__link" href="#">Закрыт</a>
+            <p class="portfolio__picture">
+              <a href="#"><img src="img/portfolio-5.jpg" alt="Сайт Типичная Пермь" width="800" height="500"></a>
+            </p>
+          </li>
+          <li class="portfolio__item">
+            <h3 class="portfolio__name">Заполнение налоговых деклараций</h3>
+            <a class="portfolio__link" href="#">Закрыт</a>
+            <p class="portfolio__picture">
+              <a href="#"><img src="img/portfolio-6.jpg" alt="Заполнение налоговых деклараций" width="400" height="224"></a>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="about" id="about">
+        <h2 class="about__title">Схема работы</h2>
+        <p class="about__subtitle">Как мы работаем</p>
+        <ol class="about__list">
+          <li class="about__item">
+            <h3 class="about__caption">
+              <span class="about__step">Этап 1</span>
+              <span class="about__name">Конфетно-букетный</span>
+            </h3>
+            <p class="about__text">Мы знакомимся с заказчиком. Внимательно слушаем его, понимаем что он хочет, какие задачи ставит. Заказчик показывает примеры, объясняет какой сайт он хочет,ну а мы мотаем на ус и делаем первые наброски.</p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__caption">
+              <span class="about__step">Этап 2</span>
+              <span class="about__name">Утверждение макета</span>
+            </h3>
+            <p class="about__text">Мы представляем макет сайта, заказчик вносит корректировки. Представляем снова, заказчик вновь вносит корректировки. Мы повторяем это процесс раз за разом, пока дизайн не будет согласован.</p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__caption">
+              <span class="about__step">Этап 3</span>
+              <span class="about__name">Программирование</span>
+            </h3>
+            <p class="about__text">Программист закупает ящик энергетиков, пакет бургеров - и начинается магия...</p>
+          </li>
+          <li class="about__item">
+            <h3 class="about__caption">
+              <span class="about__step">Этап 4</span>
+              <span class="about__name">Сдача проекта</span>
+            </h3>
+            <p class="about__text">Мы делаем презентацию проекта. Заказчик последний раз вносит корректировки и запускаем сайт.</p>
+          </li>
+        </ol>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Напишите нам!</h2>
+        <p class="contact__subtitle">
+          Пишите нам на <a href="mailto:info@swd42.ru">info@swd42.ru</a> или воспользуйтесь формой:
+        </p>
+        <form class="contact__form form" action="http://swd42.ru/" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Ваши контактные данные</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__label" for="name">Ваше имя:</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Ваше имя" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="email">Ваш email:</label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Ваш email" required>
+              </li>
+              <li class="form__item">
+                <label class="form__label" for="phone">Номер телефона:</label>
+                <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер телефона" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Ваше сообщение</legend>
+            <label for="message">Ваше сообщение</label>
+            <textarea class="form__message" name="message" id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+          </fieldset>
+          <button class="button form__button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+       <p class="page-footer__copyright copyright">&copy; Студия фантастического веб-дизайна</p>
+    </footer>
   </body>
 </html>
