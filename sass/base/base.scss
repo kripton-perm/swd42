@@ -45,3 +45,28 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #333333;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: saddlebrown;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
