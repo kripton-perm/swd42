@@ -22,6 +22,7 @@
 }
 
 @mixin wrapper-flow {
+  width: 100%;
   padding-left: $padding / $mobile-width * 100%;
   padding-right: $padding / $mobile-width * 100%;
   padding-top: $padding;
@@ -33,6 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding-left: $padding / $desktop-width * 100%;

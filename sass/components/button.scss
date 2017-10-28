@@ -1,7 +1,8 @@
 .button {
   font: inherit;
-  background-color: $pink;
-  border: 2px solid $pink;
+  background-color: transparent;
+  border: 5px solid $yellow;
+  text-decoration: none;
   border-radius: 2px;
   display: inline-block;
   padding: 10px 30px;
@@ -10,4 +11,11 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  transition: all 0.5s;
+
+  &:hover,
+  &:focus {
+    background-color: $yellow;
+    color: black;
+  }
 }
