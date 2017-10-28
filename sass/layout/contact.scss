@@ -1,0 +1,14 @@
+.contact {
+  background-color: orange;
+
+  @media (min-width: $desktop-width) {
+    background-color: darkred;
+  }
+}
+
+.contact__wrapper {
+  background-color: blueviolet;
+  min-height: 200px;
+
+  @include wrapper;
+}

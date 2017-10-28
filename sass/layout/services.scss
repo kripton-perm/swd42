@@ -1,0 +1,14 @@
+.services {
+  background-color: aqua;
+
+  @media (min-width: $desktop-width) {
+    background-color: darkturquoise;
+  }
+}
+
+.services__wrapper {
+  background-color: blue;
+  min-height: 200px;
+
+  @include wrapper;
+}

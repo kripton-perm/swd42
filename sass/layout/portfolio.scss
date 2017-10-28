@@ -1,0 +1,14 @@
+.portfolio {
+  background-color: gold;
+
+  @media (min-width: $desktop-width) {
+    background-color: greenyellow;
+  }
+}
+
+.portfolio__wrapper {
+  background-color: peru;
+  min-height: 200px;
+
+  @include wrapper-flow;
+}
