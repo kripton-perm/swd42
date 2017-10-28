@@ -1,11 +1,14 @@
 .page-footer {
-  background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    background-color: $white;
-  }
+  background-color: pink;
 
   @media (min-width: $desktop-width) {
-    background-color: $white;
+    background-color: orange;
   }
+}
+
+.page-footer__wrapper {
+  background-color: red;
+  min-height: 200px;
+
+  @include wrapper;
 }

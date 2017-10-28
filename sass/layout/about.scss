@@ -1,0 +1,14 @@
+.about {
+  background-color: teal;
+
+  @media (min-width: $desktop-width) {
+    background-color: turquoise;
+  }
+}
+
+.about__wrapper {
+  background-color: yellow;
+  min-height: 200px;
+
+  @include wrapper;
+}
